@@ -1,0 +1,17 @@
+class ComputerPlayer
+  attr_reader :name
+  def initialize(name="")
+    @name = name
+  end
+
+  def get_input(message="")
+    puts message if !message.empty?
+    prompt
+    pos = gets.chomp.split.map(&:to_i)
+    return pos
+  end
+
+  def prompt
+    print "#{@name.capitalize}: guess a row & column (e.g. 3 4):"
+  end
+end
