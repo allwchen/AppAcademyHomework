@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+ul {
+  display: flex;
+  width: 330px;
+  height: 330px;
+  list-style-type: none;
+  flex-wrap: wrap;
+  column-count: 3;
+  column-gap: 0;
+  border: 5px solid black;
+  padding: 0px;
+  margin: auto;
+}
+
+li {
+  border: 5px solid black;
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+  font-size: 60px;
+  display: block;
+  text-align: center;
+  line-height: 100px;
+}
+
+p {
+  font-size: 60px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.x.winner, .o.winner {
+  color: white;
+  background-color: green;
+}
+
+.done {
+  background-color: white;
+  color: red;
+}
